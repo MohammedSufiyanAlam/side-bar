@@ -1,0 +1,146 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* common css end */
+ .side-bar{
+    display: flex;
+ }
+
+ .side-bar main{
+    width: 100%;
+ }
+
+ aside{
+    background-color: aquamarine;
+    width: 250px;
+    height: 100vh;
+    transition: .5s;
+    margin-left: -250px;
+ }
+
+ aside nav ul li a{
+    font-size: 20px;
+    color: black;
+    border-bottom: 2px solid black;
+    display: block;
+    padding: 15px;
+    transition: .5s;
+    cursor:default;
+ }
+
+ aside nav ul li a:hover{
+    background: white;
+ }
+
+ #open-button{
+    background:blue;
+    padding: 10px;
+    color: grey;
+    font-size: 20px;
+    width: 150px;
+    height: 90px;
+    border: black 2px solid;
+    cursor: pointer;
+ }
+
+ #close-button{
+   background-color:blue;
+   color: grey;
+   width: 60px;
+   height: 60px;
+ }
+
+ #search_btn{
+   font-size: 20px;
+   background:black;
+   color: white;
+   padding: 15px 10px;
+   border: solid 2px cyan;
+ }
+
+ .show{
+   margin-left: 0px;
+ }
+
+ .hide{
+   margin-left: -250px;
+   transform: scale(0) skew(45deg);
+ }
+
+ #search-box{
+   position: fixed;
+   background: rgba(0, 0, 0, 0.601);
+   inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .5s;
+   transform-origin: bottom;
+   transform: scale(0);
+ }
+
+ #search_open_btn{
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  background:orange;
+ }
+
+ ::placeholder{
+  color: white;
+ }
+
+ #search-box form{
+   width: 40%;
+   border: 2px solid orange;
+   border-radius: 50px;
+   padding:  20px;
+   display: flex;
+ }
+
+ section form button i{
+   font-size: 20px;
+   padding: 5px;
+   color: black;
+ }
+
+ #placeholeder{
+  color: white;
+  font-size:  50px;
+ }
+
+ #search-box form input{
+   width: 100%;
+   background: none;
+   border: none;
+   font-size: 20px;
+ }
+
+ .open_search{
+  transform: scale(1);
+ }
+
+ #close_search_button{
+  font-size: 20px;
+  background: orange;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+ }
